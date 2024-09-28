@@ -1,14 +1,14 @@
 <%- include('./base/header.ejs') %>
     <div class="container">
         <div class="alert bg-success my-3">
-            <h4 class="text-center" style="color: white;">Add New Student</h4>
+            <h4 class="text-center" style="color: white;">Edit Student</h4>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form action="/add/student" method="post">
+                <form action="/edit/student/<%= student._id %>" method="post">
                     <div>
                         <label class="form-label">Roll No.</label>
                         <input type="text" name="rollNo" value="<%= student.rollNo%>" class="form-control">
